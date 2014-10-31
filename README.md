@@ -1,4 +1,4 @@
 settings
 ========
 
-My settings for all
+My settings for all software
