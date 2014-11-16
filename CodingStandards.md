@@ -47,53 +47,53 @@ To keep this document shorter we won't list all the settings in here. You can br
 
 ***Bad***
 
-    ∙∙∙∙∙∙∙∙#region∙Very∙important∙region
+            #region Very important region
 
-    ∙∙∙∙∙∙∙∙public∙static∙void∙Main(params∙string[]∙args)
-    ∙∙∙∙∙∙∙∙{
-    ∙∙∙∙∙∙∙∙∙∙∙∙Console.WriteLine("Hello∙World");
-    ∙∙∙∙∙∙∙∙}
+            public static void Main(params string[] args)
+            {
+                Console.WriteLine("Hello World");
+            }
 
-    ∙∙∙∙∙∙∙∙#endregion
+            #endregion
 
 ***Good***
 
-    ∙∙∙∙∙∙∙∙public∙static∙void∙Main(params∙string[]∙args)
-    ∙∙∙∙∙∙∙∙{
-    ∙∙∙∙∙∙∙∙∙∙∙∙Console.WriteLine("Hello∙World");
-    ∙∙∙∙∙∙∙∙}
+            public static void Main(params string[] args)
+            {
+                Console.WriteLine("Hello World");
+            }
 
 
 - Use C# built-in aliases for CLR types.
 
 ***Bad***
 
-    System.Int32∙i∙=∙42;
+    System.Int32 i = 42;
 
 ***Good***
 
-    int∙i∙=∙42;
+    int i = 42;
 
 - Don't use *string.Empty*.
 
 ***Bad***
     
-    string s∙=∙string.Empty;
+    string s = string.Empty;
 
 ***Good***
 
-    string s∙=∙"";
+    string s = "";
 
 - Don't use Hungarian notation. Use suffixes if necessary, e.g. for UI controls.
 
 ***Bad***
 
-    string∙strName;
-    System.Web.UI.WebControls.Label∙lblName;
-    System.Web.UI.WebControls.TextBox∙txtName;
+    string strName;
+    System.Web.UI.WebControls.Label lblName;
+    System.Web.UI.WebControls.TextBox txtName;
 
 ***Good***
 
-    string∙name;
-    System.Web.UI.WebControls.Label∙nameLabel;
-    System.Web.UI.WebControls.TextBox∙nameTextBox;
+    string name;
+    System.Web.UI.WebControls.Label nameLabel;
+    System.Web.UI.WebControls.TextBox nameTextBox;
