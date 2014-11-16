@@ -156,6 +156,22 @@ System.Web.UI.WebControls.TextBox nameTextBox;
 
 ---
 
+### Allow Hungarian notation for jQuery objects
+
+***Bad***
+
+```javascript
+var control = $('#myControl');
+var controlNative = document.getElementById('myControl');
+```
+
+```javascript
+var $control = $('#myControl');
+var control = document.getElementById('myControl');
+```
+
+---
+
 ### Don't use SCREAMING_CAPITALIZATION.
 
 ***Bad***
