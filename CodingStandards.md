@@ -12,7 +12,9 @@
 
 (used ReSharper 8.2)
 
-To keep this document shorter we won't list all the settings in here. You can browse them yourselves.
+To keep this document shorter we won't list all the settings in here. You can browse them yourselves once imported
+
+![ReSharper Settings](ReSharperSettings.png)
 
 ---
 
