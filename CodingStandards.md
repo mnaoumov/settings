@@ -191,7 +191,7 @@ select [MyField], [MyOtherField], [Table] from MyTable
 ***Good***
 
 ```sql
-select MyField, MyOtherField, [Table] from MyTable
+select MyField, MyOtherField, [Table] from [MyTable]
 ```
 
 ---
