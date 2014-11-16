@@ -2,10 +2,6 @@
 
 ---
 
-### Keep your code as readable as possible.
-
----
-
 ### Import ReSharper settings file.
 
 [https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings)
@@ -15,6 +11,14 @@
 To keep this document shorter we won't list all the settings in here. You can browse them yourselves once imported
 
 ![ReSharper Settings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharperSettings.PNG)
+
+---
+
+### Keep your code as readable as possible.
+
+Use ReShaper Code Cleanup capabilities.
+
+For sql use available formatters such as [http://poorsql.com/](http://poorsql.com/). Alternatively use [JetBrains 0xDBE](https://www.jetbrains.com/dbe/) with the following settings [https://raw.githubusercontent.com/mnaoumov/settings/master/0xDBE.jar](https://raw.githubusercontent.com/mnaoumov/settings/master/0xDBE.jar). NOTE: these settings does not produce 100% of the best formatting and it will require some manual changes.
 
 ---
 
@@ -148,4 +152,79 @@ System.Web.UI.WebControls.TextBox txtName;
 string name;
 System.Web.UI.WebControls.Label nameLabel;
 System.Web.UI.WebControls.TextBox nameTextBox;
+```
+
+---
+
+### Don't use SCREAMING_CAPITALIZATION.
+
+***Bad***
+
+```csharp
+public const string SECONDS_IN_DAY = 86400;
+```
+
+```sql
+SELECT * FROM MyTable WHERE MyField = 'MyValue'
+```
+
+***Good***
+
+```csharp
+public const string SecondsInDay = 86400;
+```
+
+```sql
+select * from MyTable where MyField = 'MyValue'
+```
+
+---
+
+### Avoid unnecessary escaping.
+
+***Bad***
+
+```sql
+select [MyField], [MyOtherField], [Table] from MyTable
+```
+
+***Good***
+
+```sql
+select MyField, MyOtherField, [Table] from MyTable
+```
+
+---
+
+### Prefer multi-line expressions for a better readability
+
+***Bad***
+
+```csharp
+var myVariable = new MyClass { MyProperty1 = "MyValue1"; MyProperty2 = "MyValue2"; MyProperty3 = "MyValue3"; };
+```
+
+```sql
+select * from MyTable where MyField = 'MyValue' and MyOtherField = 'MyOtherValue'
+```
+
+***Good***
+
+```csharp
+var myVariable = new MyClass
+                 {
+                     MyProperty1 = "MyValue1";
+                     MyProperty2 = "MyValue2";
+                     MyProperty3 = "MyValue3";
+                 };
+```
+
+```sql
+select
+  *
+from
+  MyTable
+where
+  MyField = 'MyValue'
+  and MyOtherField = 'MyOtherValue'
 ```
