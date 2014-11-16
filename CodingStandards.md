@@ -165,6 +165,8 @@ var control = $('#myControl');
 var controlNative = document.getElementById('myControl');
 ```
 
+***Good***
+
 ```javascript
 var $control = $('#myControl');
 var control = document.getElementById('myControl');
