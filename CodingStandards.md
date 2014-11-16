@@ -14,7 +14,7 @@
 
 To keep this document shorter we won't list all the settings in here. You can browse them yourselves once imported
 
-![ReSharper Settings](ReSharperSettings.png)
+![ReSharper Settings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharperSettings.PNG)
 
 ---
 
