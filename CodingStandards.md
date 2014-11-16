@@ -262,3 +262,81 @@ MyMethod(true, false, true, false);
 ```csharp
 MyMethod(copy: true, move: false, create: true, remove: false);
 ```
+
+---
+
+### Include bug-tracking issues number in your commit messages
+
+***Bad***
+
+```
+Commit:
+Add Cancel button 
+```
+
+***Good***
+
+```
+Commit:
+#12345 Add Cancel button 
+```
+---
+
+### Tend to have small atomic commits
+
+Ideally every commit should solve one small problem. You should not mix a bugfix and a refactoring in one commit.
+
+NOTE: this principle is difficult to follow if you are using centralized version control systems such as Subversion.
+
+---
+
+### Commit message should be descriptive
+
+***Bad***
+
+```
+Commit:
+#12345 completed 
+```
+
+***Good***
+
+```
+Commit:
+#12345 Add Cancel button 
+```
+
+NOTE: If you don't have an atomic commit, it may be difficult to describe it meaningfully because a lot of changes made. In this case use a bug-tracking issue title as a commit message.
+
+```
+Commit:
+#12345 Bug - Cancel button is missing in 5 dialog windows
+```
+
+---
+
+### Use present tense, imperative style in commit message
+
+***Bad***
+
+```
+Commit:
+Added Cancel button 
+```
+
+```
+Commit:
+Adds Cancel button 
+```
+
+```
+Commit:
+Adding Cancel button 
+```
+
+***Good***
+
+```
+Commit:
+Add Cancel button 
+```
