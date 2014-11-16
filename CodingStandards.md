@@ -1,11 +1,22 @@
 # Coding Standards
 
-- Keep your code as readable as possible.
-- Import the following ReSharper settings file (used ReSharper 8.2): [https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings)
+---
+
+### Keep your code as readable as possible.
+
+---
+
+### Import ReSharper settings file.
+
+[https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings)
+
+(used ReSharper 8.2)
 
 To keep this document shorter we won't list all the settings in here. You can browse them yourselves.
 
-- Don't use tab character for indentation. Use corresponding amount of spaces instead.
+---
+
+### Don't use tab character for indentation. Use corresponding amount of spaces instead.
 
 4 spaces for C#, JavaScript, CSS, PowerShell, aspx, ascx.
 
@@ -23,7 +34,9 @@ To keep this document shorter we won't list all the settings in here. You can br
 ∙∙∙∙∙∙∙∙public∙static∙void∙Main(params∙string[]∙args)
 ```
 
-- Don't keep trailing spaces.
+---
+
+### Don't keep trailing spaces.
 
 ***Bad***
 
@@ -37,7 +50,9 @@ To keep this document shorter we won't list all the settings in here. You can br
 ∙∙∙∙∙∙∙∙public∙static∙void∙Main(params∙string[]∙args)
 ```
 
-- Don't keep whitespaces in an empty line.
+---
+
+### Don't keep whitespaces in an empty line.
 
 ***Bad***
 
@@ -55,7 +70,9 @@ To keep this document shorter we won't list all the settings in here. You can br
 ∙∙∙∙∙∙∙∙∙∙∙∙Console.WriteLine("Line∙2");
 ```
 
-- Don't use regions.
+---
+
+### Don't use regions.
 
 ***Bad***
 
@@ -79,7 +96,9 @@ public static void Main(params string[] args)
 }
 ````
 
-- Use C# built-in aliases for CLR types.
+---
+
+### Use C# built-in aliases for CLR types.
 
 ***Bad***
 
@@ -93,7 +112,9 @@ System.Int32 i = 42;
 int i = 42;
 ```
 
-- Don't use *string.Empty*.
+---
+
+### Don't use *string.Empty*.
 
 ***Bad***
 
@@ -107,7 +128,9 @@ string s = string.Empty;
 string s = "";
 ```
 
-- Don't use Hungarian notation. Use suffixes if necessary, e.g. for UI controls.
+---
+
+### Don't use Hungarian notation. Use suffixes if necessary, e.g. for UI controls.
 
 ***Bad***
 
