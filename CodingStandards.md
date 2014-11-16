@@ -22,7 +22,7 @@ For sql use available formatters such as [http://poorsql.com/](http://poorsql.co
 
 ---
 
-### Don't use tab character for indentation. Use corresponding amount of spaces instead
+### Don't use tab character for indentation. Use corresponding amount of spaces instead.
 
 4 spaces for C#, JavaScript, CSS, PowerShell, aspx, ascx.
 
@@ -42,7 +42,7 @@ For sql use available formatters such as [http://poorsql.com/](http://poorsql.co
 
 ---
 
-### Don't keep trailing spaces
+### Don't keep trailing spaces.
 
 ***Bad***
 
@@ -58,7 +58,7 @@ For sql use available formatters such as [http://poorsql.com/](http://poorsql.co
 
 ---
 
-### Don't keep whitespaces in an empty line
+### Don't keep whitespaces in an empty line.
 
 ***Bad***
 
@@ -78,7 +78,7 @@ For sql use available formatters such as [http://poorsql.com/](http://poorsql.co
 
 ---
 
-### Don't use regions
+### Don't use regions.
 
 ***Bad***
 
@@ -104,7 +104,7 @@ public static void Main(params string[] args)
 
 ---
 
-### Use C# built-in aliases for CLR types
+### Use C# built-in aliases for CLR types.
 
 ***Bad***
 
@@ -120,7 +120,7 @@ int i = 42;
 
 ---
 
-### Don't use *string.Empty*
+### Don't use *string.Empty*.
 
 ***Bad***
 
@@ -136,7 +136,7 @@ string s = "";
 
 ---
 
-### Don't use Hungarian notation. Use suffixes if necessary, e.g. for UI controls
+### Don't use Hungarian notation. Use suffixes if necessary, e.g. for UI controls.
 
 ***Bad***
 
@@ -156,7 +156,7 @@ System.Web.UI.WebControls.TextBox nameTextBox;
 
 ---
 
-### Don't use SCREAMING_CAPITALIZATION
+### Don't use SCREAMING_CAPITALIZATION.
 
 ***Bad***
 
@@ -180,7 +180,7 @@ select * from MyTable where MyField = 'MyValue'
 
 ---
 
-### Avoid unnecessary escaping
+### Avoid unnecessary escaping.
 
 ***Bad***
 
@@ -227,4 +227,20 @@ from
 where
   MyField = 'MyValue'
   and MyOtherField = 'MyOtherValue'
+```
+
+---
+
+### Use named parameters if they are not obvious, especially for boolean parameters
+
+***Bad***
+
+```csharp
+MyMethod(true, false, true, false);
+```
+
+***Good***
+
+```csharp
+MyMethod(copy: true, move: false, create: true, remove: false);
 ```
