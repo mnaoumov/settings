@@ -120,18 +120,18 @@ int i = 42;
 
 ---
 
-### Don't use *string.Empty*
+### Use *string.Empty*
 
 ***Bad***
 
 ```csharp
-string s = string.Empty;
+string s = "";
 ```
 
 ***Good***
 
 ```csharp
-string s = "";
+string s = string.Empty;
 ```
 
 ---
