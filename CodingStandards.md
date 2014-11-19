@@ -78,32 +78,6 @@ For sql use available formatters such as [http://poorsql.com/](http://poorsql.co
 
 ---
 
-### Don't use regions
-
-***Bad***
-
-```csharp
-#region Very important region
-
-public static void Main(params string[] args)
-{
-    Console.WriteLine("Hello World");
-}
-
-#endregion
-```
-
-***Good***
-
-```csharp
-public static void Main(params string[] args)
-{
-    Console.WriteLine("Hello World");
-}
-````
-
----
-
 ### Use C# built-in aliases for CLR types
 
 ***Bad***
