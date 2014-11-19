@@ -340,3 +340,25 @@ Adding Cancel button
 Commit:
 Add Cancel button 
 ```
+
+---
+
+### Tend to use auto-implemented properties where applicable
+
+***Bad***
+
+```csharp
+private string _name;
+
+public string Name
+{
+    get { return _name; }
+    private set { _name = value; }
+}
+```
+
+***Good***
+
+```csharp
+public string Name { get; private set; }
+```
