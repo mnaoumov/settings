@@ -4,13 +4,13 @@
 
 ### Import ReSharper settings file
 
-[https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharper.DotSettings)
+[https://raw.githubusercontent.com/mnaoumov/settings/risc/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/risc/ReSharper.DotSettings)
 
 (used ReSharper 8.2)
 
 To keep this document shorter we won't list all the settings in here. You can browse them yourselves once imported
 
-![ReSharper Settings](https://raw.githubusercontent.com/mnaoumov/settings/master/ReSharperSettings.PNG)
+![ReSharper Settings](https://raw.githubusercontent.com/mnaoumov/settings/risc/ReSharperSettings.PNG)
 
 ---
 
@@ -18,7 +18,7 @@ To keep this document shorter we won't list all the settings in here. You can br
 
 Use ReShaper Code Cleanup capabilities.
 
-For sql use available formatters such as [http://poorsql.com/](http://poorsql.com/). Alternatively use [JetBrains 0xDBE](https://www.jetbrains.com/dbe/) with the following settings [https://raw.githubusercontent.com/mnaoumov/settings/master/0xDBE.jar](https://raw.githubusercontent.com/mnaoumov/settings/master/0xDBE.jar). NOTE: these settings does not produce 100% of the best formatting and it will require some manual changes.
+For sql use available formatters such as [http://poorsql.com/](http://poorsql.com/). Alternatively use [JetBrains 0xDBE](https://www.jetbrains.com/dbe/) with the following settings [https://raw.githubusercontent.com/mnaoumov/settings/risc/0xDBE.jar](https://raw.githubusercontent.com/mnaoumov/settings/risc/0xDBE.jar). NOTE: these settings does not produce 100% of the best formatting and it will require some manual changes.
 
 ---
 
