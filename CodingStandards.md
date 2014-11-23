@@ -328,3 +328,28 @@ Adding Cancel button
 Commit:
 Add Cancel button 
 ```
+
+---
+
+### Use discoverable commit messages for cherry-picks
+
+It is better to link cherry-pick commits to their originals.
+
+Here is an example where you have task #1234 which requires to cherry-pick task #9012 which was fixed in commit r5678.
+
+***Bad***
+
+```
+Commit:
+Merge #9012 
+```
+
+***Good***
+
+```
+Commit:
+Bug #1234 - Merge r5678 - Bug #9012 - Original bug message 
+ 
+```
+
+NOTE: If you follow the suggested convention your commits will be discoverable from Redmine and also r5678 will work as a link from TortoiseSVN.
