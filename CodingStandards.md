@@ -237,6 +237,29 @@ MyMethod(true, false, true, false);
 MyMethod(copy: true, move: false, create: true, remove: false);
 ```
 
+
+---
+
+### Tend to use auto-implemented properties where applicable
+
+***Bad***
+
+```csharp
+private string _name;
+
+public string Name
+{
+    get { return _name; }
+    private set { _name = value; }
+}
+```
+
+***Good***
+
+```csharp
+public string Name { get; private set; }
+```
+
 ---
 
 ### Include bug-tracking issues number in your commit messages
@@ -313,26 +336,4 @@ Adding Cancel button
 ```
 Commit:
 Add Cancel button 
-```
-
----
-
-### Tend to use auto-implemented properties where applicable
-
-***Bad***
-
-```csharp
-private string _name;
-
-public string Name
-{
-    get { return _name; }
-    private set { _name = value; }
-}
-```
-
-***Good***
-
-```csharp
-public string Name { get; private set; }
 ```
