@@ -156,18 +156,10 @@ var control = document.getElementById('myControl');
 public const string SECONDS_IN_DAY = 86400;
 ```
 
-```sql
-SELECT * FROM MyTable WHERE MyField = 'MyValue'
-```
-
 ***Good***
 
 ```csharp
 public const string SecondsInDay = 86400;
-```
-
-```sql
-select * from MyTable where MyField = 'MyValue'
 ```
 
 ---
@@ -197,7 +189,7 @@ var myVariable = new MyClass { MyProperty1 = "MyValue1"; MyProperty2 = "MyValue2
 ```
 
 ```sql
-select * from MyTable where MyField = 'MyValue' and MyOtherField = 'MyOtherValue'
+SELECT * FROM MyTable WHERE MyField = 'MyValue' AND MyOtherField = 'MyOtherValue'
 ```
 
 ***Good***
@@ -212,13 +204,10 @@ var myVariable = new MyClass
 ```
 
 ```sql
-select
-  *
-from
-  MyTable
-where
-  MyField = 'MyValue'
-  and MyOtherField = 'MyOtherValue'
+SELECT *
+FROM MyTable
+WHERE MyField = 'MyValue'
+  AND MyOtherField = 'MyOtherValue'
 ```
 
 ---
