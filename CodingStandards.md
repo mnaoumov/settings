@@ -252,7 +252,7 @@ Add Cancel button
 
 ```
 Commit:
-#12345 Add Cancel button 
+Bug #12345 - Add Cancel button 
 ```
 ---
 
@@ -277,14 +277,14 @@ Commit:
 
 ```
 Commit:
-#12345 Add Cancel button 
+Bug #12345 Add Cancel button 
 ```
 
 NOTE: If you don't have an atomic commit, it may be difficult to describe it meaningfully because a lot of changes made. In this case use a bug-tracking issue title as a commit message.
 
 ```
 Commit:
-#12345 Bug - Cancel button is missing in 5 dialog windows
+Bug #12345 - Cancel button is missing in 5 dialog windows
 ```
 
 ---
