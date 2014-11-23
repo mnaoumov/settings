@@ -20,6 +20,8 @@ Use ReShaper Code Cleanup capabilities.
 
 For sql use available formatters such as [http://poorsql.com/](http://poorsql.com/). Alternatively use [JetBrains 0xDBE](https://www.jetbrains.com/dbe/) with the following settings [https://raw.githubusercontent.com/mnaoumov/settings/risc/0xDBE.jar](https://raw.githubusercontent.com/mnaoumov/settings/risc/0xDBE.jar). NOTE: these settings does not produce 100% of the best formatting and it will require some manual changes.
 
+You can also use [Redgate SQL Prompt](http://www.red-gate.com/products/sql-development/sql-prompt/) with the following style settings [https://raw.githubusercontent.com/mnaoumov/settings/risc/SQLPrompt.sqlpromptstyle](https://raw.githubusercontent.com/mnaoumov/settings/risc/SQLPrompt.sqlpromptstyle)
+
 ---
 
 ### Don't use tab character for indentation. Use corresponding amount of spaces instead
