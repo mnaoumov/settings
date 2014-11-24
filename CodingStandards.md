@@ -2,6 +2,12 @@
 
 ---
 
+### Import Visual Studio 2010 settings file
+
+[https://raw.githubusercontent.com/mnaoumov/settings/risc/VS2010.vssettings](https://raw.githubusercontent.com/mnaoumov/settings/risc/VS2010.vssettings)
+
+---
+
 ### Import ReSharper settings file
 
 [https://raw.githubusercontent.com/mnaoumov/settings/risc/ReSharper.DotSettings](https://raw.githubusercontent.com/mnaoumov/settings/risc/ReSharper.DotSettings)
